@@ -1,3 +1,4 @@
+import os
 from web3 import Web3
 
 infura_url = 'https://mainnet.infura.io/v3/{}'.format(os.getenv("INFURA_KEY"))
