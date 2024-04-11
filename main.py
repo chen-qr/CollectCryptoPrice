@@ -6,7 +6,7 @@ async def fetch_data(exchange_id):
     exchange_class = getattr(ccxt, exchange_id)
     exchange = exchange_class()
     try:
-        ticker = exchange.fetch_ticker('BTC/USDT')
+        ticker = await exchange.fetch_ticker('BTC/USDT')
         print(f"{exchange_id} has fetched.")
         print(ticker)
     except Exception as e:
