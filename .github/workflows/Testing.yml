@@ -1,0 +1,12 @@
+name: Testing
+run-name: ${{ github.actor }} is testing.
+on: [push]
+jobs:
+  CodeTesting:
+    runs-on: ubuntu-latest
+    container: alexchenqr/python-crypto-arbitrage-bot:latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: python3 main.py
+      - run: echo "This job's status is ${{ job.status }}."
