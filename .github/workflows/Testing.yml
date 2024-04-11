@@ -8,5 +8,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      - run: python3 main.py
+      - name: Run data collection
+        run: python3 data_collection.py
       - run: echo "This job's status is ${{ job.status }}."
