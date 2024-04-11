@@ -9,5 +9,5 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Run data collection
-        run: python3 data_collection.py
+        run: python3 CEX_collection.py
       - run: echo "This job's status is ${{ job.status }}."
