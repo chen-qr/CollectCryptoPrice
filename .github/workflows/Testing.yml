@@ -4,7 +4,7 @@ on: [push]
 jobs:
   CodeTesting:
     runs-on: ubuntu-latest
-    container: alexchenqr/python-crypto-arbitrage-bot:latest
+    container: alexchenqr/python-crypto-arbitrage-bot:latest # 使用自定义的Docker image
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
