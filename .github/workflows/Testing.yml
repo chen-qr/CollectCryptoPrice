@@ -9,9 +9,9 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Run CEX collection
-        run: python3 CEX_collection.py
+        run: python3 src/CEX_collection.py
       - name: Run DEX collection
         env:
           INFURA_KEY: ${{ secrets.INFURA_KEY }}
-        run: python3 DEX_collection.py
+        run: python3 src/DEX_collection.py
       - run: echo "This job's status is ${{ job.status }}."
