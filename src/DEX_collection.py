@@ -11,5 +11,5 @@ print(web3_client.eth.get_balance(address))
 
 uniswap_contract = web3_client.eth.contract(address=address, abi=uniswap_router_abi)
 
-slot0 = pool_contract.functions.slot0().call()
+slot0 = uniswap_contract.functions.slot0().call()
 print(slot0)
