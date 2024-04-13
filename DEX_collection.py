@@ -7,6 +7,6 @@ web3_client = Web3(Web3.HTTPProvider(infura_url))
 print(web3_client.is_connected())
 
 address = Web3.to_checksum_address(uniswap_router_address)
-print(web3_client.eth.getBalance(address))
+print(web3_client.eth.get_balance(address))
 
 uniswap_contract = web3_client.eth.contract(address=address, abi=uniswap_router_abi)
