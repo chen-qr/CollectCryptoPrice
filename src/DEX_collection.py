@@ -1,6 +1,6 @@
 import os
 from web3 import Web3
-from contract_abi.uniswap_conofig import uniswap_v3_address, uniswap_v3_abi
+from contract_abi.uniswap_v3 import uniswap_v3_address, uniswap_v3_abi
 from contract_abi.factory_v2 import factory_v2_address, factory_v2_abi
 
 infura_url = 'https://mainnet.infura.io/v3/{}'.format(os.getenv("INFURA_KEY"))
