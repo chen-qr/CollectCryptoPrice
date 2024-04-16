@@ -1,5 +1,6 @@
-# LuckyCat
-A crypto arbitrage bot demo
+# CollectCryptoPrice
+
+Collect crypto price data from Centralized Exchanges (CEX) and Decentralized Exchanges (DEX).
 
 ## Dockerfile
 
