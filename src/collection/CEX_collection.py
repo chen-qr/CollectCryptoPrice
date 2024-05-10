@@ -17,7 +17,9 @@ async def fetch_data(exchange_id):
 
 
 async def collect():
-    collect_exchanges = ["okx", "binanceus", "bybit"] # 从两个OKX和币安两个交易所同时获取数据
+    # 从不同的中心化交易所获取数据
+    # 需要注意，不同交易所，对运行节点IP所在的国家，是有不同限制要求的
+    collect_exchanges = ["okx", "binanceus"]
     tasks = [fetch_data(exchange_id) for exchange_id in collect_exchanges]
     await asyncio.gather(*tasks) # 异步并发处理任务
 
